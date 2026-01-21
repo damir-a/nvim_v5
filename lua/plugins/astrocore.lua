@@ -105,6 +105,9 @@ return {
           desc = "Format with emmet",
         },
       },
+      i = {
+        ["<C-S>"] = { "<Esc>:w<CR>", desc = "Save file" },
+      },
     },
   },
 }

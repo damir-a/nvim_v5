@@ -79,31 +79,6 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
-        ["<Leader>F"] = { desc = "Formatters" },
-        ["<Leader>Fe"] = {
-          function() vim.lsp.buf.format { name = "eslint" } end,
-          desc = "Format with ESlint",
-        },
-        ["<Leader>Fn"] = {
-          function() vim.lsp.buf.format { name = "null-ls" } end,
-          desc = "Format with Null-ls",
-        },
-        ["<Leader>Fp"] = {
-          function() vim.lsp.buf.format { name = "prettier" } end,
-          desc = "Format with prettier",
-        },
-        ["<Leader>Fv"] = {
-          function() vim.lsp.buf.format { name = "vtsls" } end,
-          desc = "Format with vtsls",
-        },
-        ["<Leader>Fl"] = {
-          function() vim.lsp.buf.format { name = "volar" } end,
-          desc = "Format with volar",
-        },
-        ["<Leader>Fm"] = {
-          function() vim.lsp.buf.format { name = "emmet" } end,
-          desc = "Format with emmet",
-        },
       },
       i = {
         ["<C-S>"] = { "<Esc>:w<CR>", desc = "Save file" },
